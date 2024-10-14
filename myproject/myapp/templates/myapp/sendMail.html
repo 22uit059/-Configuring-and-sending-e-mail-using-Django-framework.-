@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Email Sent</title>
+ <style>
+ body {
+ font-family: 'Poppins', Arial, sans-serif;
+ background-color: #8a727e; /* Soft Light Blue */
+ margin: 0;
+ padding: 0;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ }
+ .container {
+ background-color: #89aaac; /* White */
+ border-radius: 15px;
+ box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+ padding: 40px;
+ text-align: center;
+ width: 450px;
+ animation: fadeIn 0.5s ease-in-out;
+ }
+ @keyframes fadeIn {
+ from { opacity: 0; transform: translateY(-20px); }
+ to { opacity: 1; transform: translateY(0); }
+ }
+ h1 {
+ color: #f22424; /* Bright Blue */
+ font-size: 30px;
+ margin-bottom: 20px;
+ }
+ p {
+ color: #1c1818; /* Dark Blue Gray */
+ font-size: 18px;
+ margin-bottom: 40px;
+ line-height: 1.6;
+ }
+ .button {
+ background-color: #59dd50; /* Bright Blue */
+ color: rgb(39, 34, 32);
+ padding: 15px 35px;
+ border: none;
+ border-radius: 25px;
+ font-size: 18px;
+ cursor: pointer;
+ text-decoration: none;
+ transition: background-color 0.3s, transform 0.2s;
+ }
+ .button:hover {
+ background-color: #1e78b5; /* Darker Blue */
+ transform: translateY(-3px);
+ }
+ </style>
+</head>
+<body>
+ <div class="container">
+ <h1>Mail Sent Successfully!</h1>
+ <p>"Success! Your email is on its way. We’re grateful for your trust in our service. You
+may return to the homepage.".</p>
+ <a href="{% url 'home' %}" class="button">Go Back Home</a>
+ </div>
+</body>
+</html>
